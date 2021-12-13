@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!--Tag de responsividade-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Importação da fonte Poppins para o projeto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+        <!--Importação do CSS-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Importação do JQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--Importação dos scripts do JS-->
+        <!--A palavra "defer" define que o JS vai ser carregado depois do HTML mesmo aquele sendo importado na head do documento-->
+        <script src="main.js" defer></script>
+
+        <title>Calculator With JavaScript</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calculator with JavaScript</h1>
+        </header>
+
+        <main>
+            <div class="calculator">              
+                <table>
+                    <!--Display da calculadora-->
+                    <tr>
+                        <!--O campo de inserção e visualização de números ocupará 4 colunas-->
+                        <td colspan="4">
+                            <p id="showNumber"></p>
+                        </td>
+                    </tr>
+                    <!--Botões da calculadora-->
+                    <!--Linha 1-->
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" class="button ce" value="CE" onclick="deleteAll()">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="C" onclick="deleteOne()">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="+" onclick="insertNumber('+')">
+                        </td>
+                    </tr>
+                    <!--Linha 2-->
+                    <tr>
+                        <td>
+                            <input type="button" class="button" value="1" onclick="insertNumber(1)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="2" onclick="insertNumber(2)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="3" onclick="insertNumber(3)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="*" onclick="insertNumber('*')">
+                        </td>
+                    </tr>
+                    <!--Linha 3-->
+                    <tr>
+                        <td>
+                            <input type="button" class="button" value="4" onclick="insertNumber(4)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="5" onclick="insertNumber(5)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="6" onclick="insertNumber(6)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="-" onclick="insertNumber('-')">
+                        </td>
+                    </tr>
+                    <!--Linha 4-->
+                    <tr>
+                        <td>
+                            <input type="button" class="button" value="7" onclick="insertNumber(7)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="8" onclick="insertNumber(8)">
+                        </td>                       
+                        <td>
+                            <input type="button" class="button" value="9" onclick="insertNumber(9)">
+                        </td>
+                        <td rowspan="2">
+                            <input type="button" class="button equalButton" value="=" onclick="eql()">
+                        </td>
+                    </tr>
+                    <!--Linha 5-->
+                    <tr>
+                        <td>
+                            <input type="button" class="button" value="0" onclick="insertNumber(0)">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="/" onclick="insertNumber('/')">
+                        </td>
+                        <td>
+                            <input type="button" class="button" value="." onclick="insertNumber('.')">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>Feito com &#10084;&#65039; por Helena Oliveira dos Santos - Info19</p>
+        </footer>    
+    </body>
+</html>

@@ -19,7 +19,7 @@ body{
     height: 100vh;
 
     /*Definir a imagem de fundo da página*/
-    background-image: url('/Image/SenkuIshigamiWallpaper.png');
+    background-image: url('Image/SenkuIshigamiWallpaper.png');
     /*A imagem de fundo não vai se repetir*/
     background-repeat: no-repeat;
     /*A imagem de fundo vai ficar com seu tamanho normal, sem perder a qualidade*/

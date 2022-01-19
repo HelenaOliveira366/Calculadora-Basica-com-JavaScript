@@ -1,0 +1,91 @@
+/*Seletor global*/
+*{
+    /*Retirar a estilização padrão do CSS, dessa forma não atrapalhará as estilizações futuras*/
+    padding: 0rem;
+    border: border-box;
+    margin: 0;
+}
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    /*Variáveis*/
+    --color-green-light: #34BE82;
+    --color-beige-light: #F2DDC1;
+}
+
+body{
+    /*Altura e largura em viewport para acompanhar o tamnho da tela do dispositivo do usuário*/
+    width: 100vw;
+    height: 100vh;
+
+    /*Definir a imagem de fundo da página*/
+    background-image: url('Image/SenkuIshigamiWallpaper.png');
+    /*A imagem de fundo não vai se repetir*/
+    background-repeat: no-repeat;
+    /*A imagem de fundo vai ficar com seu tamanho normal, sem perder a qualidade*/
+    background-size: cover;
+    /*A imagem de fundo ocupara o centro da página*/
+    background-position: center;
+}
+
+header{
+    color: var(--color-green-light);
+    text-align: center;
+    font-size: 1.5rem;
+    
+    padding: 1rem;
+}
+
+table{
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.50rem;
+}
+
+.calculator{
+    /*Alinhar a calculadora ao centro do eixo y da página*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showNumber{
+    border: 2px solid var(--color-green-light);
+    color: black;
+    text-align: left;
+
+    height: 3rem;
+}
+
+.button{
+    background: var(--color-beige-light);
+    color: black;
+    font-size: 1rem;
+
+    padding: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+
+    border:2px solid black;
+}
+
+.ce{
+    width: 6.8rem;
+}
+
+.equalButton{
+    height: 6.7rem;
+}
+
+.button:hover{
+    background: var(--color-green-light);
+    color: white;
+}
+
+footer{
+    color: var(--color-green-light);
+    text-align: center;
+
+    padding: 1rem;
+    margin-top: 3rem;
+}

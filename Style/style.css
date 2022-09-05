@@ -23,7 +23,7 @@ body{
     /*A imagem de fundo não vai se repetir*/
     background-repeat: no-repeat;
     /*A imagem de fundo vai ficar com seu tamanho normal, sem perder a qualidade*/
-    background-size: 100% 100%;
+    background-size: cover;
     /*A imagem de fundo ocupara o centro da página*/
     background-position: center;
 }
